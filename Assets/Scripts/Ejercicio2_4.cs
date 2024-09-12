@@ -1,22 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
 
-public class Ejercicio2_2 : MonoBehaviour
+public class Ejercicio2_4 : MonoBehaviour
 {
     int vida = 10;
-    float exp = 5;
-    char carac = 'a';
-    float resultadoSuma;
-    float resultadoResta;
-    
     // Start is called before the first frame update
     void Start()
     {
-      Debug.Log(resultadoSuma = vida + exp);
-      Debug.Log(resultadoResta = vida - exp);
-        
+       Debug.Log( vida += 77);
+       Debug.Log( vida -= 3);
+       Debug.Log( vida *= 4);
+
     }
 
     // Update is called once per frame
