@@ -8,18 +8,16 @@ public class Ejercicio4_1 : MonoBehaviour
     [SerializeField] float altura;
     [SerializeField] float radio;
     [SerializeField] float lado;
-    float areaCuadrado;
-    float areaCirculo;
-    float areaTriangulo;
+    
     // Start is called before the first frame update
     void Start()
     {
-        Cuadrado(lado);
-        circulo(radio);
-        triangulo(base1, altura);
-        Debug.Log("El area del cuadrado es " + areaCuadrado);
-        Debug.Log("El area del circulo es " + areaCirculo);
-        Debug.Log("El area del triangulo es " + areaTriangulo);
+        float areaCuadradoResultado = Cuadrado(lado);
+        float areaCirculoResultado = Circulo(radio);
+        float areaTrianguloResultado = Triangulo(base1, altura);
+        Debug.Log("El area del cuadrado es " + areaCuadradoResultado);
+        Debug.Log("El area del circulo es " + areaCirculoResultado);
+        Debug.Log("El area del triangulo es " + areaCirculoResultado);
     }
 
     // Update is called once per frame
@@ -35,12 +33,12 @@ public class Ejercicio4_1 : MonoBehaviour
         return areaCuadrado;
     }
 
-    float circulo( float radio)
+    float Circulo( float radio)
     {
         areaCirculo = (radio * radio) * Mathf.PI ;
         return areaCirculo;
     }
-    float triangulo(float base1, float altura)
+    float Triangulo(float base1, float altura)
     {
         areaTriangulo = (base1 * altura) / 2;
         return areaTriangulo;
