@@ -9,6 +9,8 @@ public class Personaje : MonoBehaviour
     float altura;
     float velocidad;
 
+    public float Vida { get => vida; set => vida = value; }
+
     void Mover()
     {
 
