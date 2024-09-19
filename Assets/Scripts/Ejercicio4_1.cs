@@ -29,18 +29,18 @@ public class Ejercicio4_1 : MonoBehaviour
 
     float Cuadrado(float lado)
     {
-        areaCuadrado = lado * 2;
+       float areaCuadrado = lado * 2;
         return areaCuadrado;
     }
 
     float Circulo( float radio)
     {
-        areaCirculo = (radio * radio) * Mathf.PI ;
+        float areaCirculo = (radio * radio) * Mathf.PI ;
         return areaCirculo;
     }
     float Triangulo(float base1, float altura)
     {
-        areaTriangulo = (base1 * altura) / 2;
+        float areaTriangulo = (base1 * altura) / 2;
         return areaTriangulo;
     }
 }
